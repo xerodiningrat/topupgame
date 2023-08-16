@@ -1,0 +1,38 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height to full viewport height */
+    background-color: rgb(37, 41, 46); /* Set the background color */
+}
+
+.card-bronze {
+    background-color: #cd7f32; /* Bronze color */
+    border-radius: 10px;
+}
+
+.card-silver {
+    background-color: #c0c0c0; /* Silver color */
+    border-radius: 10px;
+}
+
+.card-gold {
+    background-color: #ffd700; /* Gold color */
+    border-radius: 10px;
+}
+
+.card-animation {
+    animation: slideInLeft 0.5s forwards;
+    transition: transform 0.3s;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
